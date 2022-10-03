@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/bg3.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0d4e8" height="48.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="6.0" layoutY="14.0" text="Admin">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="60.0" layoutY="13.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/person.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="227.0" layoutY="1.0" text="Blue Ocean Hotel" textFill="#cd2d2d">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="148.0" layoutY="12.0" onAction="#inHomeOnAction" style="-fx-background-color: white;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="561.0" layoutY="13.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/menu.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="13.0" layoutY="61.0" onAction="#inBackOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: white;" text="   Back" textFill="#1b1313" />
+      <ImageView fitHeight="12.0" fitWidth="13.0" layoutX="21.0" layoutY="68.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/left-arrow.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="96.0" layoutY="62.0" prefHeight="25.0" prefWidth="409.0" promptText="search" />
+      <ImageView fitHeight="268.0" fitWidth="286.0" layoutX="29.0" layoutY="122.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/6911.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="268.0" fitWidth="258.0" layoutX="329.0" layoutY="122.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/top-view-statistics-presentation-with-chart.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="132.0" text="View Annually Income">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="132.0" text="View Monthly Income">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="344.0" text="jan  feb mar apr may jun jul  aug sep">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

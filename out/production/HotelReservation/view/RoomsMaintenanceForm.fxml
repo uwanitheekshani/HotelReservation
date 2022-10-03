@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="recepMaintenanceContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomsMaintenanceFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/filling-registration-form.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0d4e8" height="48.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="4.0" layoutY="14.0" text="Receptionist">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="99.0" layoutY="13.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/person.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="242.0" layoutY="1.0" text="Blue Ocean Hotel" textFill="#cd2d2d">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="12.0" onAction="#mainHomeOnAction" style="-fx-background-color: white;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="561.0" layoutY="17.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/menu.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="19.0" layoutY="57.0" onAction="#mainBackOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: white;" text="   Back" textFill="#1b1313" />
+      <ImageView fitHeight="12.0" fitWidth="13.0" layoutX="25.0" layoutY="64.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/left-arrow.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="96.0" layoutY="57.0" prefHeight="25.0" prefWidth="409.0" promptText="search" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff6c" height="127.0" layoutX="441.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="147.0" />
+      <Label layoutX="456.0" layoutY="99.0" text="Room Availability" textFill="#281313">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="119.0" text="single         3" textFill="#d7c4c4">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="143.0" text="double       4" textFill="#d7c4c4">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="470.0" layoutY="168.0" text="triple         4" textFill="#d7c4c4">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="191.0" text="quad         4" textFill="#d7c4c4">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbResRoomNum" layoutX="300.0" layoutY="202.0" prefHeight="25.0" prefWidth="103.0" promptText="02" />
+      <JFXButton buttonType="RAISED" layoutX="417.0" layoutY="325.0" onAction="#addToMainOnAction" style="-fx-background-color: #f1c40f;" text="Add to Maintenance">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c1cfdbe3" height="127.0" layoutX="65.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="48.0" layoutY="109.0" text="All Rooms              25" textFill="#242425">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="155.0" text="Room No" textFill="#6b0d0d">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="202.0" text="Reserved Rooms      2">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="247.0" text="Available Rooms      23">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbAvailRoom" layoutX="301.0" layoutY="247.0" prefHeight="25.0" prefWidth="103.0" promptText="23" />
+      <Label layoutX="79.0" layoutY="284.0" text="Maintenance            00">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbMainRoomNum" layoutX="301.0" layoutY="284.0" prefHeight="25.0" prefWidth="103.0" promptText="none" />
+      <Label layoutX="79.0" layoutY="327.0" text="Room No" textFill="#e16e6e">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbNum" layoutX="178.0" layoutY="327.0" prefHeight="25.0" prefWidth="171.0" promptText="Num" />
+   </children>
+</AnchorPane>

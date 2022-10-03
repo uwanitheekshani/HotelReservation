@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mealContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MealPackageFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/restaurant-interior.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0d4e8" height="48.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="8.0" layoutY="12.0" text="Admin">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="5.0" text="Blue Ocean Hotel" textFill="#cd2d2d">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="90.0" layoutY="15.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/person.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="33.0" layoutX="553.0" layoutY="15.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/menu.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="167.0" layoutY="16.0" onAction="#mHomeOnAction" style="-fx-background-color: white;" text="Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="71.0" onAction="#mBackOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: white;" text="   Back" textFill="#1b1313" />
+      <ImageView fitHeight="12.0" fitWidth="13.0" layoutX="24.0" layoutY="78.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/left-arrow.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dce1e599" height="103.0" layoutX="480.0" layoutY="57.0" stroke="#801919" strokeType="INSIDE" width="107.0" />
+      <Label layoutX="488.0" layoutY="63.0" text="Meal types" textFill="#252222">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="82.0" text="1.Local Meals" textFill="#402626">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="488.0" layoutY="100.0" text="2.Chinese Meals" textFill="#402626">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="120.0" text="3.French Meals" textFill="#402626">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtMealPackageType" labelFloat="true" layoutX="125.0" layoutY="103.0" promptText="Meal Package Type" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtMealPrice" labelFloat="true" layoutX="306.0" layoutY="103.0" promptText="Meal Price" style="-fx-background-color: white;" />
+      <TextField layoutX="15.0" layoutY="135.0" prefHeight="25.0" prefWidth="326.0" promptText="search" />
+      <JFXButton fx:id="btnmSaveAndUpdate" buttonType="RAISED" layoutX="360.0" layoutY="135.0" onAction="#btnSaveMealOnAction" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #1abc9c;" text="Save Meal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="368.0" layoutY="72.0" onAction="#addmNewOnAction" style="-fx-background-color: #2ecc71;" text="+Add New" />
+      <TableView fx:id="tblMeal" layoutX="15.0" layoutY="174.0" prefHeight="214.0" prefWidth="437.0">
+         <columns>
+            <TableColumn fx:id="colMealPackageType" prefWidth="181.0" text="Meal Package Type" />
+            <TableColumn fx:id="colMealPrice" prefWidth="131.0" text="Meal Price" />
+            <TableColumn fx:id="colmOption" prefWidth="124.0" text="Option" />
+         </columns>
+      </TableView>
+      <Label layoutX="122.0" layoutY="54.0" text="Add ,Delete &amp; Modify Meal Package" textFill="#eb7474">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
